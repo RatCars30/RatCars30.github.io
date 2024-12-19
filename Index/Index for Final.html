@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 1em 2em;
+        }
+
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .header-text {
+            margin-left: auto;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        header h1,
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 1.5em;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 2em 10%;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 1em;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 1em 0;
+            font-size: 1.5em;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .view-button {
+            background-color: #333;
+            color: white;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            display: inline-block;
+            margin-top: 1em;
+        }
+
+        .view-button:hover {
+            background-color: #575757;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form button {
+            padding: 0.8em 2em;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+        }
+
+        .contact-form button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="Furniture Store Logo">
+        <div class="header-text">
+            <h1>Furniture Store</h1>
+            <p>You're one-stop shop for quality furniture</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="Index for Final.html">Home</a>
+        <a href="About us page.html">About Us</a>
+        <a href="Products.html">Our Products</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Furniture Store</h2>
+        <p>We offer a wide variety of high-quality furniture to suit every taste and budget. Explore our collection of modern, traditional, and contemporary furniture pieces for your home and office.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Furniture Store, we are dedicated to providing our customers with the finest furniture at affordable prices. Established in 2024, we have built a reputation for quality, customer service, and innovation. Our goal is to help you create a beautiful and comfortable living space.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S-A0qLTxf-U?si=pMjdMo4VC2t3lkGS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="chair2.jpg" alt="Chairs">
+                <h3>Chairs</h3>
+                <p>Discover our collection of stylish and comfortable chairs. Perfect for any room, whether it's your living room, dining area, or office space.</p>
+                <a href="Chair Furniture.html" class="view-button">View</a>
+            </div>
+            <div class="product-card">
+                <img src="sofa2.jpg" alt="Sofas">
+                <h3>Sofas</h3>
+                <p>Find the perfect sofa for your living room. From modern designs to cozy classics, we offer a variety of styles and sizes.</p>
+                <a href="Sofa Furniture.html" class="view-button">View</a>
+            </div>
+            <div class="product-card">
+                <img src="table2.jpg" alt="Tables">
+                <h3>Tables</h3>
+                <p>Explore a variety of tables, including coffee tables, dining tables, and office desks. Elegant designs to suit every taste and space.</p>
+                <a href="Table Furniture.html" class="view-button">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact and See Us!</h2>
+        <p>If you have any questions, feel free to get in touch with us. We are here to help you!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96800.6966626863!2d-74.03549699128273!3d40.69551817194539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4a6c47643b%3A0x284552dca0b97d69!2sNew%20York%20City%20College%20of%20Technology!5e0!3m2!1sen!2sus!4v1734476172707!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-form">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();  
+
+            // Retrieving user input
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            console.log("Name: " + name);
+            console.log("Email: " + email);
+            console.log("Message: " + message);
+            localStorage.setItem("userName", name);
+            localStorage.setItem("userEmail", email);
+            localStorage.setItem("userMessage", message);
+            alert("Your message has been submitted!");
+        });
+    </script>
+
+</body>
+
+</html>
